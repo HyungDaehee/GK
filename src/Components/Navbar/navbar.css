@@ -1,0 +1,186 @@
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo .icon {
+    color: orange;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .navBar {
+        background-color: beige;
+        position: absolute;
+        height: max-content;
+        padding: 1rem;
+        width: 100%;
+        top: 0;
+        left: -500%;
+        box-sizing: 0 2px 4px rgba(209, 209, 209, 0.904);
+        transition: .5s ease;
+        z-index: 1000;
+    }
+
+    .navList {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .navItem {
+        padding: 1rem 0;
+    }
+
+    .navLink {
+        color: brown;
+        font-size: .9rem;
+        font-weight: 600;
+    }
+
+    .navLink:hover {
+        color: orange;
+    }
+
+    .headerBtns {
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-top: 1rem;
+    }
+
+    .btn a {
+        font-weight: 600;
+    }
+
+    .btn a:hover {
+        color: white;
+    }
+
+    .loginBtn {
+        background: none;
+        border: 1px solid orange;
+    }
+
+    .loginBtn a {
+        color: orange;
+    }
+
+    .loginBtn:hover {
+        background-color: gray;
+        color: white;
+    }
+
+    .loginBtn a:hover {
+        color: white;
+    }
+
+    .closeNavbar {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: orange;
+    }
+
+    .closeNavbar:hover {
+        color: gray;
+    }
+
+    .activeNavbar {
+        left: 0
+    }
+}
+
+.toggleNavbar .icon {
+    font-size: 25px;
+    color: orange;
+
+}
+
+.toggleNavbar .icon:hover {
+    color: beige;
+}
+
+.activeHeader {
+    background: rgba(128, 128, 128, 0.455);
+    box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45);
+}
+
+@media screen and (min-width: 769px) {
+    .toggleNavbar {
+        display: none;
+    }
+
+    .closeNavbar {
+        display: none;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    .navList {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+    }
+
+    .navItem .navLink {
+        color: white;
+        padding: 0.45rem;
+        font-size: .9rem;
+        font-weight: 400;
+    }
+
+    .navItem .navLink:hover {
+        color: orange;
+    }
+
+    .btn {
+        margin-left: 1rem;
+    }
+
+    .btn a {
+        color: white;
+        font-weight: 500;
+    }
+
+    .loginBtn {
+        background: none;
+        border: 1px solid orange;
+    }
+
+    .loginBtn:hover {
+        background: orange;
+    }
+
+    .loginBtn a {
+        color: white;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+   .header{
+    padding: 1rem 8.5rem !important;
+   }
+}

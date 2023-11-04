@@ -1,0 +1,126 @@
+.main2 {
+    .secContainer {
+        .title {
+            color: black;
+            line-height: 1.5rem;
+            padding-bottom: 2rem;
+            text-align: center;
+            font-size: 1.5rem;
+
+        }
+
+        .mainContent {
+            gap: 1rem;
+
+            .singleItem {
+                text-align: center;
+
+                img {
+                    background: rgba(247, 144, 54, 0.265);
+                    width: 100px;
+                    border-radius: 50%;
+                    padding: 1rem;
+                }
+
+                h3 {
+                    font-weight: 700;
+                    color: black;
+                    padding: .5rem;
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 23px;
+                    font-weight: 500;
+                    padding-bottom: .5rem;
+                    color: gray;
+                }
+            }
+        }
+
+        .videoCard {
+            margin-top: 2rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.73),
+                    rgba(0, 0, 0, 0.609)),url(../img/main2-2.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            .cardContent {
+                gap: 2rem;
+                padding: 2rem 1rem;
+
+                .cardText {
+                    text-align: center;
+                    h2 {
+                        color: white;
+                        font-weight: 600;
+                        padding-bottom: 1rem;
+                    }
+
+                    p{
+                        color: white;
+                        opacity: .7;
+                        font-size: 18px;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+
+            .cardVideo{
+                border: 2px solid white;
+                height: 300px;
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+
+                video{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 720px)  {
+  .main2{
+    .secContainer{
+        .videoCard{
+            gap: 4rem;
+            padding: 4rem 2rem;
+            
+
+            .cardText{
+                h2{
+                font-size: 2rem;
+                }
+
+                p{
+                    opacity: .7;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .cardContent{
+            grid-template-columns: repeat(2,1fr) !important;
+        }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    .main2{
+        .secContainer{
+            .mainContent{
+                padding: 2.5rem 0;
+            }
+        }
+    }
+}
+
+

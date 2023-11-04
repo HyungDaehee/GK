@@ -1,0 +1,72 @@
+.home {
+    height: 100vh;
+    background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url(../img//img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+  
+    &Text {
+      text-align: center;
+  
+      .title {
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+      }
+  
+      .subtitle {
+        color: white;
+        opacity: 0.9;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 1rem 0;
+        max-width: 70%;
+        text-align: center;
+        margin: auto;
+      }
+  
+      .btn {
+        padding: 0.6rem 1.5rem;
+  
+        a {
+          font-weight: 600;
+        }
+      }
+  
+      @media screen and (min-width: 556px) {
+        .title {
+          font-size: 2.5rem;
+        }
+  
+        .subtitle {
+          font-size: 18px;
+        }
+      }
+  
+      @media screen and (min-width: 720px) {
+        padding: 1rem 10rem;
+  
+        .title {
+          font-size: 3.5rem;
+          margin: auto;
+          line-height: 4rem;
+        }
+  
+        .subtitle {
+          width: 70%;
+        }
+      }
+  
+      @media screen and (min-width: 1024px) {
+        .subtitle {
+          font-size: 20px;
+        }
+      }
+    }
+  }

@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s ease;
+}
+
+body{
+    background: white;
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    
+}
+
+ li{
+    list-style: none;
+   
+}
+
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.btn{
+    padding: .4rem 1.5rem;
+    background: orange; 
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.btn a {
+    color: white;
+    font-weight: 500;
+}
+
+.btn:hover{
+    color: white;
+}
+
+.sectionIntro{
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sectionIntro.settitle{
+    color: black;
+    line-height: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.sectionIntrop{
+    font-size: 13px;
+    color: brown;
+    font-weight: 500;
+}
+
+img,video{
+    width: 100%;
+    height: auto;
+}
+
+input{
+    font-size: 100%;
+}
+
+@media screen and (min-width: 884px){
+    .mainContent{
+        grid-template-columns: repeat(4,1fr);
+        grid-column: 1 / 6;
+    }
+}
+
+@media screen and (min-width: 1240px){
+    .container{
+        width: 100% !important;
+        margin: auto;
+    }
+}
+
+.section{
+    padding: 5rem 0.3rem;
+}
+
+.sectionIntro{
+    margin: 0 auto 3rem;
+}
+
+.secIntro .secTitle{
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    font-size: 2.2rem;
+}
+    
+.secIntro p {
+    font-size: 15px;
+}
+
+@media screen and (min-width: 2560px) {
+    body{
+        zomm: 1.7
+    }
+}
+
+::selection{
+    background: orange;
+    color: white;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+    background: lightgrey;
+}
+
+::-webkit-scrollbar-thumb{
+    background: orange;
+    border-radius: 10px;
+    cursor: pointer;
+}
