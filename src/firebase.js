@@ -13,24 +13,27 @@ const firebaseConfig = {
   measurementId: "G-P0HYBT1MLD"
 };
 
- export const app = initializeApp(firebaseConfig);
- 
- export const messaging = getMessaging(app);
+  const app = initializeApp(firebaseConfig);
+  export const messaging = getMessaging(app);
+
+  export default app;
  
  async function requestPermission() {
    console.log("권한 요청 중...");
+  
  
    const permission = await Notification.requestPermission();
    if (permission === "denied") {
-    //  console.log("알림 권한 허용 안됨");
+     console.log("알림 권한 허용 안됨");
      return;
    }
  
-  //  console.log("알림 권한이 허용됨");
+   console.log("알림 권한이 허용됨");
  
    const token = await getToken(messaging, {
      vapidKey: "BPMYVhygwwndYMm4k3gevP3zp8fLD6Riq0DZLy_5G4Z9ys_mMMiMBWbavBhgnxYMQRGmNjV8FyZ2LWaW2v_UC-o"
    });
+   
  
    if (token) console.log("token: ", token);
    else console.log("Can not get Token");

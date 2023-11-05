@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getDatabase, ref, onValue, off } from 'firebase/database';
-import { app } from '../../firebase.js';
+import app  from '../../firebase.js';
 
 const UserLocation = ({ map }) => {
   const [markers, setMarkers] = useState([]);

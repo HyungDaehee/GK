@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './login.scss';
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
  import { useNavigate } from 'react-router-dom';
- import { app} from '../../firebase.js';
+ import app from '../../firebase.js';
  import kakaologinoimg from '../img/kakao_login.png';
 
 const Login = () => {

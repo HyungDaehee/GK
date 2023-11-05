@@ -4,7 +4,7 @@ import Chat from './Chat.jsx';
 import { getDatabase } from 'firebase/database';
 import { ref, set } from 'firebase/database';
 import { getAuth } from 'firebase/auth';
-import { app } from '../../firebase.js';
+import app  from '../../firebase.js';
 import Serchmap from './Serchmap.jsx';
 import UserLocation from './UserLocation.jsx';
 import Logout from '../Login/Logout.jsx';
@@ -78,8 +78,8 @@ const Map = () => {
           map.setCenter(userLatLng);
         });
 
-        setWatchId(newWatchId); // 위치 추적 식별자 설정
-      } else {
+      
+      } else if(!user){
         alert('사용자가 로그인하지 않았습니다.');
       }
     } else {

@@ -13,9 +13,6 @@ import KakaoCallback from './Components/Login/KakaoCallback.jsx'
 import Map from './Components/Report/Map.jsx';
 
 
-
-
-
 const App = ()=> {
   return (
     <>
@@ -32,7 +29,7 @@ const App = ()=> {
     } />
       <Route path='/Login' element={<Login/>} />
       <Route path='/Signup' element={<Singup/>}/>
-      <Route path='oauth/callback/kakao' element={<KakaoCallback/>} />
+      <Route path='/oauth/callback/kakao' element={<KakaoCallback/>} />
       <Route path='/Report' element={
      <>
      <Navbar/>
